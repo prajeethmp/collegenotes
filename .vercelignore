@@ -1,0 +1,9 @@
+.git
+.github
+collegenotes
+data
+public/uploads
+README.md
+DEPLOYMENT.md
+.npmrc
+*.log
