@@ -1,0 +1,227 @@
+{
+  "users": [
+    {
+      "id": "admin_root",
+      "name": "Platform Administrator",
+      "email": "admin@notes.local",
+      "role": "admin",
+      "status": "active",
+      "passwordHash": "$2b$10$8GNtKX.vIAUScU06t/pJQuhXYb6OClbpYtTZkN199ChQwCV6wC82a",
+      "createdAt": "2026-11-18T14:38:31.138Z",
+      "updatedAt": "2026-11-18T14:38:31.138Z",
+      "notesCount": 6
+    },
+    {
+      "id": "usr_1795013629084_5u1nj",
+      "name": "Rahul Sharma",
+      "email": "rahul@college.edu",
+      "role": "student",
+      "status": "active",
+      "passwordHash": "$2b$10$o5dalCJld2BhtyUAvZqEAOmEyTrE.KThMrloTz4bGWE4aJSwxQDe6",
+      "createdAt": "2026-11-18T14:53:49.084Z",
+      "updatedAt": "2026-11-18T14:53:49.084Z",
+      "notesCount": 0
+    },
+    {
+      "id": "usr_1795013781736_tojqa",
+      "name": "Stranger",
+      "email": "stranger@test.com",
+      "role": "student",
+      "status": "active",
+      "passwordHash": "$2b$10$p4FYiCZL0GUTdtwh/2ys8.8eTPYaCtucCNaDbvnAXXo/k.ROxwN7i",
+      "createdAt": "2026-11-18T14:56:21.736Z",
+      "updatedAt": "2026-11-18T14:56:21.736Z",
+      "notesCount": 0
+    }
+  ],
+  "notes": [
+    {
+      "id": "note_1795013888778_vp9wg",
+      "title": "Java Polymorphism & Method Overriding Deep-Dive",
+      "description": "Runtime polymorphism vs Compile-time polymorphism with code snippets and memory allocation.",
+      "content": "# Java Polymorphism\n\nMethod Overloading is resolved at compile time. Method Overriding is dynamic dispatch resolved at runtime through vtables.",
+      "categoryId": "oops",
+      "tags": [
+        "polymorphism",
+        "runtime",
+        "vtables"
+      ],
+      "semester": "Sem 3",
+      "authorId": "admin_root",
+      "authorName": "Platform Administrator",
+      "authorRole": "admin",
+      "attachments": [],
+      "viewsCount": 1,
+      "downloadsCount": 1,
+      "likesCount": 1,
+      "likedBy": [
+        "::1"
+      ],
+      "isPinned": false,
+      "createdAt": "2026-11-18T14:58:08.778Z",
+      "updatedAt": "2026-11-18T14:58:08.778Z"
+    },
+    {
+      "id": "note_dbms_1",
+      "title": "Complete SQL & Relational Algebra Master Cheatsheet",
+      "description": "Comprehensive guide covering DDL, DML, Joins (Inner, Left, Right, Full Outer), Aggregate functions, Group By, Having, and Relational Algebra expressions.",
+      "content": "# Complete SQL & Relational Algebra Master Guide\n\n## 1. Relational Algebra Fundamentals\n* **Selection (σ)**: Filters rows satisfying condition -> $\\sigma_{age > 20}(Students)$\n* **Projection (π)**: Selects specific columns -> $\\pi_{name, roll}(Students)$\n* **Cartesian Product (×)**: Combines all rows from two relations\n* **Natural Join (⋈)**: Combines tables on common attributes\n\n## 2. SQL Normalization (1NF to BCNF)\n- **1NF**: Atomic values only, no repeating groups.\n- **2NF**: In 1NF and no partial dependencies (every non-prime attribute fully functionally dependent on primary key).\n- **3NF**: In 2NF and no transitive dependencies ($X \\to Y, Y \\to Z$).\n- **BCNF**: For every functional dependency $X \\to Y$, $X$ must be a super key.\n\n## 3. Transaction ACID Properties\n- **Atomicity**: All or nothing execution (WAL / Undo logs).\n- **Consistency**: Preserves database invariants before and after transaction.\n- **Isolation**: Concurrent transactions do not interfere (2PL, Snapshot Isolation).\n- **Durability**: Committed data persists across system crashes (Redo logs).",
+      "categoryId": "dbms",
+      "tags": [
+        "sql",
+        "normalization",
+        "acid",
+        "joins",
+        "cheatsheet"
+      ],
+      "semester": "Sem 4",
+      "authorId": "admin_root",
+      "authorName": "Prof. Admin",
+      "authorRole": "admin",
+      "attachments": [],
+      "viewsCount": 142,
+      "downloadsCount": 58,
+      "likesCount": 24,
+      "likedBy": [],
+      "isPinned": true,
+      "createdAt": "2026-11-16T14:38:31.139Z",
+      "updatedAt": "2026-11-18T14:38:31.139Z"
+    },
+    {
+      "id": "note_oops_1",
+      "title": "OOP Design Patterns & SOLID Principles (C++ / Java)",
+      "description": "Factory, Singleton, Observer, Strategy patterns with class diagrams, code examples, and in-depth breakdown of SOLID design principles.",
+      "content": "# Object-Oriented Programming & SOLID Principles\n\n### S - Single Responsibility Principle\nA class should have only one reason to change. Separate business logic from logging/persistence.\n\n### O - Open/Closed Principle\nOpen for extension, closed for modification. Use interfaces and polymorphism.\n\n### L - Liskov Substitution Principle\nSubtypes must be substitutable for their base types without altering program correctness.\n\n### I - Interface Segregation Principle\nClients should not be forced to depend on interfaces they do not use. Split fat interfaces.\n\n### D - Dependency Inversion Principle\nHigh-level modules should not depend on low-level modules. Both should depend on abstractions.",
+      "categoryId": "oops",
+      "tags": [
+        "solid",
+        "design-patterns",
+        "java",
+        "cpp",
+        "polymorphism"
+      ],
+      "semester": "Sem 3",
+      "authorId": "admin_root",
+      "authorName": "Prof. Admin",
+      "authorRole": "admin",
+      "attachments": [],
+      "viewsCount": 98,
+      "downloadsCount": 42,
+      "likesCount": 19,
+      "likedBy": [],
+      "isPinned": true,
+      "createdAt": "2026-11-15T14:38:31.139Z",
+      "updatedAt": "2026-11-18T14:38:31.139Z"
+    },
+    {
+      "id": "note_ds_1",
+      "title": "Data Structures Hand-Written Revision Notes: Trees & Graphs",
+      "description": "Complete traversal algorithms (Inorder, Preorder, Postorder, Level-order), AVL Tree balancing rotations, Dijkstra algorithm, and Bellman-Ford comparisons.",
+      "content": "# Trees & Graphs Quick Reference\n\n### Binary Search Tree Traversal\n* **In-order (Left, Root, Right)**: Yields elements in ascending sorted order for BST.\n* **Pre-order (Root, Left, Right)**: Used for serialization/copying tree.\n* **Post-order (Left, Right, Root)**: Used for deleting nodes, bottom-up calculations.\n\n### AVL Tree Balance Factor\n$$BF(node) = Height(LeftSubtree) - Height(RightSubtree)$$\nValid values: $\\{-1, 0, 1\\}$. Rotations: LL, RR, LR, RL.\n\n### Graph Shortest Path\n* **Dijkstra**: Single-source, non-negative edge weights. Time: $O((V + E) \\log V)$ using Min-Heap.\n* **Bellman-Ford**: Handles negative weights and detects negative cycles. Time: $O(V \\times E)$.",
+      "categoryId": "ds",
+      "tags": [
+        "trees",
+        "avl",
+        "graphs",
+        "dijkstra",
+        "algorithms"
+      ],
+      "semester": "Sem 3",
+      "authorId": "admin_root",
+      "authorName": "Prof. Admin",
+      "authorRole": "admin",
+      "attachments": [],
+      "viewsCount": 215,
+      "downloadsCount": 89,
+      "likesCount": 37,
+      "likedBy": [],
+      "isPinned": true,
+      "createdAt": "2026-11-13T14:38:31.139Z",
+      "updatedAt": "2026-11-18T14:38:31.139Z"
+    },
+    {
+      "id": "note_dlco_1",
+      "title": "Digital Logic & Computer Organization: K-Maps to Pipelining",
+      "description": "4-variable Karnaugh Maps, Multiplexers, Booth Multiplier, IEEE 754 Floating point, and 5-stage RISC instruction pipeline with hazard resolutions.",
+      "content": "# Digital Logic & Computer Organization (DLCO)\n\n### 1. Karnaugh Map (K-Map) Minimization\n- Gray code ordering: 00, 01, 11, 10\n- Grouping rules: Groups must be powers of 2 (1, 2, 4, 8, 16)\n- Wrap-around grouping allowed (corners and edges)\n\n### 2. Five-Stage RISC Pipeline\n1. **IF**: Instruction Fetch from Instruction Memory\n2. **ID**: Instruction Decode & Register Fetch\n3. **EX**: Execute / ALU Address Calculation\n4. **MEM**: Memory Access (Read/Write)\n5. **WB**: Write-Back result to Register File\n\n### 3. Pipeline Hazards\n* **Structural**: Resource conflict (solve with separate instruction & data caches)\n* **Data**: Dependency on previous result (solve with forwarding/bypassing or stalling)\n* **Control**: Branch instructions (solve with branch prediction / branch delay slots)",
+      "categoryId": "dlco",
+      "tags": [
+        "k-maps",
+        "pipelining",
+        "risc",
+        "boolean-algebra",
+        "cpu"
+      ],
+      "semester": "Sem 4",
+      "authorId": "admin_root",
+      "authorName": "Prof. Admin",
+      "authorRole": "admin",
+      "attachments": [],
+      "viewsCount": 167,
+      "downloadsCount": 64,
+      "likesCount": 28,
+      "likedBy": [],
+      "isPinned": false,
+      "createdAt": "2026-11-12T14:38:31.139Z",
+      "updatedAt": "2026-11-18T14:38:31.139Z"
+    },
+    {
+      "id": "note_dms_1",
+      "title": "Discrete Mathematical Structures: Logic, Relations & Graph Theory",
+      "description": "Truth tables, Equivalence relations, Posets, Hasse diagrams, Lattices, Euler formula for planar graphs, and Pigeonhole principle applications.",
+      "content": "# Discrete Mathematical Structures (DMS)\n\n### 1. Propositional Equivalence Laws\n- **De Morgan's**: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$\n- **Contrapositive**: $p \\to q \\equiv \\neg q \\to \\neg p$\n\n### 2. Relations Properties\n- **Reflexive**: $\\forall a, (a, a) \\in R$\n- **Symmetric**: $(a, b) \\in R \\implies (b, a) \\in R$\n- **Transitive**: $(a, b) \\in R \\land (b, c) \\in R \\implies (a, c) \\in R$\n- **Equivalence Relation**: Reflexive + Symmetric + Transitive.\n- **Partial Order (POSET)**: Reflexive + Anti-Symmetric + Transitive.\n\n### 3. Graph Theory Invariants\n- **Handshaking Lemma**: $\\sum_{v \\in V} \\deg(v) = 2|E|$\n- **Euler planar formula**: $V - E + F = 2$",
+      "categoryId": "dms",
+      "tags": [
+        "logic",
+        "relations",
+        "poset",
+        "graphs",
+        "hasse-diagram"
+      ],
+      "semester": "Sem 3",
+      "authorId": "admin_root",
+      "authorName": "Prof. Admin",
+      "authorRole": "admin",
+      "attachments": [],
+      "viewsCount": 133,
+      "downloadsCount": 45,
+      "likesCount": 22,
+      "likedBy": [],
+      "isPinned": false,
+      "createdAt": "2026-11-10T14:38:31.139Z",
+      "updatedAt": "2026-11-18T14:38:31.139Z"
+    },
+    {
+      "id": "note_others_1",
+      "title": "Operating Systems: Process Synchronization & Deadlocks",
+      "description": "Semaphores, Monitors, Producer-Consumer problem, Dining Philosophers, Banker algorithm for Deadlock avoidance, and Page replacement algorithms.",
+      "content": "# Operating Systems: Concurrency & Deadlocks\n\n### 1. Four Coffman Conditions for Deadlock\n1. **Mutual Exclusion**: At least one resource held in non-shareable mode.\n2. **Hold and Wait**: Process holding resources requests additional resources.\n3. **No Preemption**: Resources cannot be preempted; must be released voluntarily.\n4. **Circular Wait**: Closed chain of processes where each waits for resource held by next.\n\n### 2. Banker's Algorithm Data Structures\n* $Available[m]$: Available resources of each type.\n* $Max[n][m]$: Maximum demand of each process.\n* $Allocation[n][m]$: Currently allocated resources.\n* $Need[n][m] = Max[n][m] - Allocation[n][m]$.",
+      "categoryId": "others",
+      "tags": [
+        "operating-systems",
+        "deadlocks",
+        "semaphores",
+        "bankers-algorithm"
+      ],
+      "semester": "Sem 4",
+      "authorId": "admin_root",
+      "authorName": "Prof. Admin",
+      "authorRole": "admin",
+      "attachments": [],
+      "viewsCount": 180,
+      "downloadsCount": 71,
+      "likesCount": 31,
+      "likedBy": [],
+      "isPinned": false,
+      "createdAt": "2026-11-09T14:38:31.139Z",
+      "updatedAt": "2026-11-18T14:38:31.139Z"
+    }
+  ],
+  "settings": {
+    "allowPublicRegistration": false,
+    "maxUploadSizeBytes": 26214400,
+    "defaultAdminCreated": true,
+    "siteName": "StudyNexus",
+    "siteTagline": "Engineering Notes & Study Material Repository"
+  }
+}
